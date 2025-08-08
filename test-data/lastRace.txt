@@ -1,0 +1,5 @@
+Race snapshot:
+GOLD(pos=5)
+SWORD(pos=3)
+CUP(pos=2)
+STICK(pos=4)
