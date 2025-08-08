@@ -64,10 +64,10 @@ public class RaceService {
             sb.append("\n");
         }
 
-        sb.append("\nCartas por etapa:\n");
+        sb.append("\nCard per stage:\n");
         int etapa = 1;
         for (Card c : stagesStack) {
-            sb.append("Etapa ").append(etapa++).append(": ").append("?").append("\n");
+            sb.append("Stage ").append(etapa++).append(": ").append("?").append("\n");
         }
 
         System.out.print(sb.toString());
@@ -113,7 +113,7 @@ public class RaceService {
             persistence.dumpReadable("lastRace.txt", new ArrayList<>(horses.values()));
             persistence.saveBinary("lastRace.ser", new ArrayList<>(horses.values()));
         } catch (IOException e) {
-            LOG.error("Error guardando estado", e);
+            LOG.error("Error saving", e);
         }
     }
 
